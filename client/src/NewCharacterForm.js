@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import "./NewCharacterForm.css"
 
-const charactersAPI = 'http://localhost:4000/characters';
+const charactersAPI = '/characters';
 
 function NewCharacterForm (){
 

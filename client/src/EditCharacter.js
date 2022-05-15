@@ -5,7 +5,7 @@ import CharacterCard from "./CharacterCard"
 function EditCharacter () {
     const params = useParams();
 
-    const charactersAPI = 'http://localhost:4000/characters';
+    const charactersAPI = '/characters';
     const [character, setCharacter] = useState(null);
 
 //GET REQUEST
@@ -13,22 +13,22 @@ function EditCharacter () {
     fetch(`${charactersAPI}/${params.id}`)
     .then(response => response.json())
     .then(charactersData => {
-      console.log(charactersData)
-      setCharacter(charactersData)
+        console.log(charactersData)
+        setCharacter(charactersData)
     })
     }, [])
     
 
     const submit = () => {
-      fetch(`${charactersAPI}/${params.id}`, {
-        method: 'PATCH',
-        headers: {
-         'Content-type': 'application/json; charset=UTF-8',
-       },
-        body: JSON.stringify(character)
-       })
-        .then((response) => response.json())
-        .then((json) => console.log(json));
+        fetch(`${charactersAPI}/${params.id}`, {
+            method: 'PATCH',
+            headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+            body: JSON.stringify(character)
+        })
+            .then((response) => response.json())
+            .then((json) => console.log(json));
     }
 
     if (!character) return null;

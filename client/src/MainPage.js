@@ -2,8 +2,8 @@ import React, {useEffect, useState } from "react";
 import CharacterCollection from "./CharacterCollection";
 import YourBattleChars from "./YourBattleChars";
 
-const charactersAPI = 'http://localhost:4000/characters';
-const planetsAPI = 'http://localhost:4000/planets'
+const charactersAPI = '/characters';
+const planetsAPI = '/planets'
 
 function MainPage(){
 

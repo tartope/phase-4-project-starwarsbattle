@@ -27,19 +27,19 @@ function YourBattleChars({battleChars, battlePlanets, handleDeleteCharacter, han
             />
         )
     })
-  function GetValue(){
-    const weapons = ["Lightning", "Light Saber", "the Force"];
-    let random = weapons[Math.floor(Math.random() * weapons.length)];
-    // console.log(random, weapons[random], "weapon");
-    document.getElementById("message").innerHTML = random;
-  }
+    function GetValue(){
+        const weapons = ["Lightning", "Light Saber", "the Force"];
+        let random = weapons[Math.floor(Math.random() * weapons.length)];
+        // console.log(random, weapons[random], "weapon");
+        document.getElementById("message").innerHTML = random;
+    }
 
-  function GetValueOne(){
-    const weapons = ["Lightning", "Light Saber", "the Force"];
-    let random = weapons[Math.floor(Math.random() * weapons.length)];
-    // console.log(random, weapons[random]);
-    document.getElementById("messageOne").innerText=random;
-  }
+    function GetValueOne(){
+        const weapons = ["Lightning", "Light Saber", "the Force"];
+        let random = weapons[Math.floor(Math.random() * weapons.length)];
+        // console.log(random, weapons[random]);
+        document.getElementById("messageOne").innerText=random;
+    }
 
     // function clickRandom(){
     //     let counter = 1;
@@ -49,9 +49,6 @@ function YourBattleChars({battleChars, battlePlanets, handleDeleteCharacter, han
     //             counter++;
     //         }}, 160)
     // }
-
-
-       
 
     return (
         <div>
@@ -92,7 +89,7 @@ function YourBattleChars({battleChars, battlePlanets, handleDeleteCharacter, han
                 </div>
             </div>
         </div>
-      );
+    );
 }
 
 export default YourBattleChars;

@@ -6,20 +6,6 @@ import "./CharacterCard.css"
 function CharacterCard( { character, onCardClick, onClickDelete }){
     // console.log(character)
 
-
-    
-    // function handleEditClick() {
-    //     console.log("Updated character:", character)
-    //     fetch(`http://localhost:4000/characters/${character.id}`, {
-    //         method: "PATCH",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({"content": characterText})
-    //     })
-    //     character.content = characterText
-    // }
-
     return (
         <div className="characterCard"  onClick={()=>onCardClick(character)}>
             <img src={character.image} alt={character.name} />

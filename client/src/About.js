@@ -11,7 +11,6 @@ function About(){
             <div className="scroll-text">
                 <h1>Welcome to Battle of the Known Universe</h1>
                 <p>This intergalatic game of rock, paper, scissors will determine your character's fate.</p>
-                {/* <p>First: Head over the to the Login/Sign Up to create your account.</p> */}
                 <p>Click on two characters for battle. If you change your mind, click on them from the Battle Station to remove them.</p>
                 <p>If you wish, add a character of your choosing. Yes, hrrmmm.</p>
                 <p>Next: Choose one planet that will host the battle.</p>
