@@ -57,7 +57,7 @@ function MainPage(){
         setCharacters(deleteCharacters);
         const deleteBattleChars = battleChars.filter(item => item.id !== deletedCharacter.id)
         setBattleChars(deleteBattleChars);
-    }
+      }
 
     function handleRemoveFromYourBattleChars(battleChar){
       const removeBattleChar = battleChars.filter(item => item.id !== battleChar.id)
