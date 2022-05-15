@@ -20,7 +20,7 @@ function NavBar({user, setUser}) {
 
     return (
         <div className="whole-nav" >
-            { user ? <button className="logout-btn" onClick = {handleLogoutClick} > Logout </button> : null }
+            <button className="logout-btn" onClick = {handleLogoutClick} > Logout </button>
             <h3 className="nav-header" >STAR WARS: BATTLE OF THE KNOWN UNIVERSE</h3>
             <div className="nav">
                 <NavLink exact to="/">Home</NavLink>
