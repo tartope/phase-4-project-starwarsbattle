@@ -20,13 +20,13 @@ function NavBar({user, setUser}) {
 
     return (
         <div className="whole-nav" >
-            <button className="logout-btn" onClick = {handleLogoutClick} > Logout </button>
+            { user ? <button className="logout-btn" onClick = {handleLogoutClick} > Logout </button> : null }
             <h3 className="nav-header" >STAR WARS: BATTLE OF THE KNOWN UNIVERSE</h3>
             <div className="nav">
                 <NavLink exact to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
-                <NavLink to="/mainpage"> Main Page </NavLink>
-                <NavLink to="/newcharacterform">Add Character</NavLink>
+                { user ? <NavLink to="/mainpage"> Main Page </NavLink> : null }
+                { user ? <NavLink to="/newcharacterform">Add Character</NavLink> : null }
                 <NavLink to="/login"> Login/Sign Up </NavLink>
                 {/* <button onClick = {handleLogoutClick} > Logout </button> */}
             </div>
