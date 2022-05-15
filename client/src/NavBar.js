@@ -25,10 +25,9 @@ function NavBar({user, setUser}) {
             <div className="nav">
                 <NavLink exact to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
-                { user ? <NavLink to="/mainpage"> Main Page </NavLink> : null }
-                { user ? <NavLink to="/newcharacterform">Add Character</NavLink> : null }
+                <NavLink to="/mainpage"> Main Page </NavLink>
+                <NavLink to="/newcharacterform">Add Character</NavLink>
                 <NavLink to="/login"> Login/Sign Up </NavLink>
-                {/* <button onClick = {handleLogoutClick} > Logout </button> */}
             </div>
         </div>
     )
