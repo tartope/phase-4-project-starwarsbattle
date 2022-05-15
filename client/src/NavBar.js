@@ -25,6 +25,7 @@ function NavBar({user, setUser}) {
             <div className="nav">
                 <NavLink exact to="/">Home</NavLink>
                 <NavLink to="/about">About</NavLink>
+                <NavLink to="/demo">Demo</NavLink>
                 { user ? <NavLink to="/mainpage"> Main Page </NavLink> : null }
                 { user ? <NavLink to="/newcharacterform">Add Character</NavLink> : null }
                 <NavLink to="/login"> Login/Sign Up </NavLink>

@@ -8,6 +8,7 @@ import NewCharacterForm from "./NewCharacterForm";
 import Login from "./Login";
 import LoginForm from "./LoginForm";
 import EditCharacter from "./EditCharacter";
+import Demo from "./Demo";
 // import SignUpForm from "./SignUpForm";
 
 import './App.css';
@@ -34,7 +35,8 @@ function App() {
       <NavBar user={user} setUser={setUser} />
           <Routes>
                 <Route exact path ="/" element= { <Home /> } /> 
-                <Route path ="/about" element= { <About  /> } /> 
+                <Route path ="/about" element= { <About  /> } />
+                <Route path ="/demo" element= { <Demo  /> } /> 
                 <Route path ="/login" element= { <Login setUser={setUser} /> } />
                 <Route path="/mainpage" element= { <MainPage />} />
                 <Route path="/newcharacterform" element= { <NewCharacterForm /> } />
