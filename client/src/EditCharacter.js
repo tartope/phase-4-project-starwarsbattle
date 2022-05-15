@@ -34,38 +34,38 @@ function EditCharacter () {
     if (!character) return null;
     return (
         <div>
-        <div className="edit-character">
-            {/* <h1>test from edit</h1> */}
-            <CharacterCard character={character} />
-            <div className="edit-form-div" >
-                <form onSubmit={submit}>
-                    <div className="form">
-                        <label htmlFor="name">Name</label>
-                        <input 
-                            id="name" 
-                            type="text" 
-                            placeholder="Character Name"
-                            value={character.name}
-                            onChange={(e) =>  setCharacter({ ...character, name: e.target.value})}
-                        />
-                    </div>
+            <div className="edit-character">
+                {/* <h1>test from edit</h1> */}
+                <CharacterCard character={character} />
+                <div className="edit-form-div" >
+                    <form onSubmit={submit}>
+                        <div className="form">
+                            <label htmlFor="name">Name</label>
+                            <input 
+                                id="name" 
+                                type="text" 
+                                placeholder="Character Name"
+                                value={character.name}
+                                onChange={(e) =>  setCharacter({ ...character, name: e.target.value})}
+                            />
+                        </div>
 
-                    {/* <div>
-                        <label htmlFor="image">Image</label>
-                        <input id="image" type="text" placeholder="Character Image" />
-                    </div>
+                        {/* <div>
+                            <label htmlFor="image">Image</label>
+                            <input id="image" type="text" placeholder="Character Image" />
+                        </div>
 
-                    <div>
-                        <label htmlFor="movie">Movie</label>
-                        <input id="movie" type="text" placeholder="Movie Name" />
-                    </div> */}
-                    
-                    <input type="submit" value="Edit Character" />
-                </form>
+                        <div>
+                            <label htmlFor="movie">Movie</label>
+                            <input id="movie" type="text" placeholder="Movie Name" />
+                        </div> */}
+                        
+                        <input type="submit" value="Edit Character" />
+                    </form>
+                </div>
+
             </div>
-
         </div>
-    </div>
     );
 
 }
