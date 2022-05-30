@@ -1,3 +1,33 @@
+# Star Wars: Battle of the Known Universe
+
+## Motivation
+A Star Wars spin on the classic game of "Rock, Paper, Scissors". Lightning beats Light Saber, Light Saber beats the Force, and the Force beats Lightning.
+
+## Code Style
+Standard
+
+## Screenshots
+![Gif](https://media.giphy.com/media/NH8v2NTD96nMf4y0Bc/giphy.gif)
+
+## Tech/Framework used
+React frontend, Rails backend with postgreSQL database.
+
+## Installation
+### `npm install`
+Installs all of the dependencies listed in the package.json file.
+### `npm start --prefix client`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `rails start` or `rails s` 
+Runs the backend server.
+
+## Credits
+[Bridget Kelly](https://github.com/bc-kelly "GitHub") co-creator
+
 # Project Template: React/Rails API
 
 ## Description
