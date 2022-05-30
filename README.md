@@ -6,7 +6,7 @@ A Star Wars spin on the classic game of "Rock, Paper, Scissors". Lightning beats
 ## Code Style
 Standard
 
-## Screenshots
+## Screenshots/Gifs
 ![Gif](https://media.giphy.com/media/NH8v2NTD96nMf4y0Bc/giphy.gif)
 
 ## Tech/Framework used
@@ -27,6 +27,8 @@ Runs the backend server.
 
 ## Credits
 [Bridget Kelly](https://github.com/bc-kelly "GitHub") co-creator
+
+---
 
 # Project Template: React/Rails API
 
