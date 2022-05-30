@@ -25,6 +25,9 @@ You will also see any lint errors in the console.
 ### `rails start` or `rails s` 
 Runs the backend server.
 
+## Project Link
+[Star Wars: Battle of the Known Universe](https://swbattle.herokuapp.com/)
+
 ## Credits
 [Bridget Kelly](https://github.com/bc-kelly "GitHub") co-creator
 
