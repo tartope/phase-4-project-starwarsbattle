@@ -1,10 +1,7 @@
 import React from "react";
 import "./CharacterCard.css"
 
-// const charactersAPI = '/characters';
-
 function CharacterCard( { character, onCardClick, onClickDelete }){
-    // console.log(character)
 
     return (
         <div className="characterCard"  onClick={()=>onCardClick(character)}>

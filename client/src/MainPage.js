@@ -16,7 +16,6 @@ function MainPage(){
         fetch(charactersAPI)
         .then(response => response.json())
         .then(charactersData => {
-          // console.log(charactersData)
           setCharacters(charactersData)
         })
       }, [])
@@ -25,7 +24,6 @@ function MainPage(){
         fetch(planetsAPI)
         .then(response => response.json())
         .then(planetsData => {
-          // console.log(planetsData)
           setPlanets(planetsData)
         })
       }, []) 
@@ -49,7 +47,6 @@ function MainPage(){
       }
 
       function handleDeleteCharacter(deletedCharacter){
-        // console.log(deletedCharacter)
         fetch(`${charactersAPI}/${deletedCharacter.id}`, {
         method: 'DELETE'
         });

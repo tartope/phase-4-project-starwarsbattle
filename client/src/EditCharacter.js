@@ -35,7 +35,6 @@ function EditCharacter () {
     return (
         <div>
             <div className="edit-character">
-                {/* <h1>test from edit</h1> */}
                 <CharacterCard character={character} />
                 <div className="edit-form-div" >
                     <form onSubmit={submit}>
@@ -49,16 +48,6 @@ function EditCharacter () {
                                 onChange={(e) =>  setCharacter({ ...character, name: e.target.value})}
                             />
                         </div>
-
-                        {/* <div>
-                            <label htmlFor="image">Image</label>
-                            <input id="image" type="text" placeholder="Character Image" />
-                        </div>
-
-                        <div>
-                            <label htmlFor="movie">Movie</label>
-                            <input id="movie" type="text" placeholder="Movie Name" />
-                        </div> */}
                         
                         <input type="submit" value="Edit Character" />
                     </form>

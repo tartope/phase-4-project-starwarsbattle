@@ -1,8 +1,6 @@
 .characterCollection {
     display: flex;
-    /* flex-wrap: wrap; */
     margin: 20px;
-    /* justify-content: center; */
     overflow: auto;
 }
 

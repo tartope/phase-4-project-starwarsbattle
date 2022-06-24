@@ -6,7 +6,6 @@ import "./CharacterCollection.css"
 function CharacterCollection( { characters, planets, handleAddToBattleChars, handleAddPlanetToBattle, handleDeleteCharacter }) {
 
     const characterCard = characters.map((character) => {
-        // console.log(character)
         return <CharacterCard key={character.id} character={character} onCardClick={handleAddToBattleChars} onClickDelete={handleDeleteCharacter} />
 
     })

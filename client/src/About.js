@@ -4,9 +4,6 @@ import './About.css';
 function About(){
     return (
     <div>
-        {/* <div className="about">
-            <h1>About the game:</h1>
-        </div> */}
         <div className="wrapper">
             <div className="scroll-text">
                 <h1>Welcome to Battle of the Known Universe</h1>

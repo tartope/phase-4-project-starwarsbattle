@@ -3,7 +3,7 @@ import CharacterCard from "./CharacterCard";
 import PlanetCard from "./PlanetCard";
 import "./YourBattleChars.css"
 
-const weapons = ["Lightning", "Light Saber", "the Force"];
+// const weapons = ["Lightning", "Light Saber", "the Force"];
 
 
 function YourBattleChars({battleChars, battlePlanets, handleDeleteCharacter, handleRemoveFromYourBattleChars, handleRemoveFromYourBattlePlanets }) {
@@ -30,25 +30,14 @@ function YourBattleChars({battleChars, battlePlanets, handleDeleteCharacter, han
     function GetValue(){
         const weapons = ["Lightning", "Light Saber", "the Force"];
         let random = weapons[Math.floor(Math.random() * weapons.length)];
-        // console.log(random, weapons[random], "weapon");
         document.getElementById("message").innerHTML = random;
     }
 
     function GetValueOne(){
         const weapons = ["Lightning", "Light Saber", "the Force"];
         let random = weapons[Math.floor(Math.random() * weapons.length)];
-        // console.log(random, weapons[random]);
         document.getElementById("messageOne").innerText=random;
     }
-
-    // function clickRandom(){
-    //     let counter = 1;
-    //     setInterval(function() {
-    //         if (counter <=3) {
-    //             displayRandomWeapon();
-    //             counter++;
-    //         }}, 160)
-    // }
 
     return (
         <div>

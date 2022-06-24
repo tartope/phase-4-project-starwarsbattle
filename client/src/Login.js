@@ -1,8 +1,6 @@
 import { useState } from "react";
-// import styled from "styled-components";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
-// import { Button } from "../styles";
 import "./Login.css"
 
 function Login({ setUser }) {
@@ -11,7 +9,7 @@ function Login({ setUser }) {
   return (
     <wrapper className= "login">
       <div className= "login"> 
-       {/* <div className="empty" > 
+      {/* <div className="empty" > 
 
       </div>   */}
       {showLogin ? (
